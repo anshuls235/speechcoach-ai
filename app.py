@@ -12,6 +12,14 @@ import sqlite3
 from datetime import datetime
 from transcription import transcribe
 from tts import generate_speech
+from huggingface_hub import login
+
+# Get token from environment variable (set via Space secrets)
+token = os.environ.get("HF_TOKEN")
+
+# Login if token is available
+if token:
+    login(token) 
 
 
 #Load the LLM

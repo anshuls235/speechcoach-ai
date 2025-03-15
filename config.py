@@ -1,13 +1,14 @@
 import os
+import torch
 from transformers import BitsAndBytesConfig
 
 # LLM with bitsandbytes quantization
-MODEL_NAME = os.environ("LLM_MODEL", "meta-llama/Llama-3.1-8B-Instruct") #Uses Llama 3.1 8B by default
+MODEL_NAME = os.environ.get("LLM_MODEL", "meta-llama/Llama-3.1-8B-Instruct") #Uses Llama 3.1 8B by default
 
 BNB_CONFIG = BitsAndBytesConfig(
     load_in_4bit=True, 
     bnb_4bit_quant_type="nf4", 
-    bnb_4bit_compute_dtype="torch.bfloat16"
+    bnb_4bit_compute_dtype=torch.bfloat16
 )
 
 d_system_prompts = {
