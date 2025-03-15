@@ -1,3 +1,14 @@
+---
+title: SpeechCoach AI
+emoji: 🎯
+colorFrom: blue
+colorTo: indigo
+sdk: gradio
+sdk_version: 5.21.0
+app_file: app.py
+pinned: false
+---
+
 # SpeechCoach AI
 
 An AI-powered speech training assistant for practicing and improving your communication skills through instant feedback.
