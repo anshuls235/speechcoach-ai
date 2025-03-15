@@ -1,0 +1,83 @@
+# Python virtual environments
+myenv/
+venv/
+env/
+.env/
+.venv/
+ENV/
+env.bak/
+venv.bak/
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Application data files
+sessions.json
+feedback.db
+*.db
+*.db-journal
+*.db-shm
+*.db-wal
+
+# Temporary files and caches
+.cache/
+.local/
+.huggingface/
+*.wav
+*.mp3
+temp/
+tmp/
+__pycache__/
+
+# Model files
+models/
+*.bin
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+
+# Log files
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+*.egg
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.project
+.pydevproject
+.settings/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Docker
+.dockerignore
+docker-compose.override.yml
+
+# Local config overrides
+config.local.py
+*.local.py
