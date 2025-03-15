@@ -420,7 +420,7 @@ with gr.Blocks(theme="soft",css="""
         show_copy_button=True, 
         height=400, 
         visible=initial_visibility,
-        avatar_images=("images/user.webp","images/agent.webp"),
+        avatar_images=("./images/user.webp","./images/agent.webp"),
         label="🔊 AI Chatbot: Tap Assistant's Reply to Hear It!",
         show_label=True
     )
